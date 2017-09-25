@@ -14,6 +14,18 @@ module.exports = {
 
   context: resolve(__dirname, 'src'),
 
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
+
   plugins: [
     new HtmlPlugin({
       title: 'Amdocs Webpack Workshop'
