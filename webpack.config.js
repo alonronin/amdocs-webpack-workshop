@@ -2,21 +2,21 @@ const { resolve } = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: {
-        app: './'
-    },
+  entry: {
+    app: './'
+  },
 
-    output: {
-        path: resolve(__dirname, 'dist'),
-        filename: '[name].js'
+  output: {
+    path: resolve(__dirname, 'dist'),
+    filename: '[name].js'
 
-    },
+  },
 
-    context: resolve(__dirname, 'src'),
+  context: resolve(__dirname, 'src'),
 
-    plugins: [
-        new HtmlPlugin({
-            title: 'Amdocs Webpack Workshop'
-        }),
-    ]
+  plugins: [
+    new HtmlPlugin({
+      title: 'Amdocs Webpack Workshop'
+    }),
+  ]
 };
