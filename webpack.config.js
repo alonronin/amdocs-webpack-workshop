@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
+const autoPrefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
@@ -40,6 +41,19 @@ module.exports = {
               localIdentName: '[name]__[local]--[hash:base64:5]',
             },
           },
+
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins() {
+                return [
+                  autoPrefixer
+                ]
+              }
+            }
+          },
+
           {
             loader: 'sass-loader',
             options: { sourceMap: true, },
