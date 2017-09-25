@@ -33,10 +33,12 @@ module.exports = {
           'style-loader',
           {
             loader: 'css-loader',
-            modules: true,
-            camelCase: true,
-            localIdentName: '[name]__[local]--[hash:base64:5]',
-            options: { sourceMap: true, },
+            options: {
+              sourceMap: true,
+              modules: true,
+              camelCase: true,
+              localIdentName: '[name]__[local]--[hash:base64:5]',
+            },
           },
           {
             loader: 'sass-loader',
