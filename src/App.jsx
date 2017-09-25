@@ -1,10 +1,17 @@
-import React from 'react';
-import { title } from './style.scss';
+import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 
-function App() {
-  return <div>
-    <h1 className={title}>Amdocs Workshop</h1>
-  </div>
+import Form from './Form';
+import Form2 from './Form2';
+
+@observer
+class App extends Component {
+  render() {
+    return <div>
+      <Form />
+      <Form2 />
+    </div>;
+  }
 }
 
 export default App;
