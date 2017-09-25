@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "trash dist",
-    "prewebpack": "npm run clean",
-    "webpack": "webpack"
+    "prebuild": "npm run clean",
+    "build": "webpack",
+    "start": "webpack-dev-server -d --open"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "html-webpack-plugin": "^2.30.1",
     "trash-cli": "^1.4.0",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }
