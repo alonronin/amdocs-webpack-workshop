@@ -12,7 +12,7 @@ class Store {
     first = this.first,
     last = this.last,
   } = {}) => {
-    this.first = Object.assign(this.first, first);
+    this.first = {...this.first, ...first};
     this.last = last;
   };
 
