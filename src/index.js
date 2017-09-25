@@ -1,8 +1,10 @@
+import React from 'react';
+import { render } from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import content from './content';
+import App from './App';
 
 const div = document.createElement('div');
-div.innerHTML = content;
-
 document.body.append(div);
+
+render(<App />, div);

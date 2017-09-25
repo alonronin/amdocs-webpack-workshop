@@ -2,6 +2,8 @@ const { resolve } = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const autoPrefixer = require('autoprefixer');
 
+const context = resolve(__dirname, 'src');
+
 module.exports = {
   entry: {
     app: './'
@@ -10,13 +12,18 @@ module.exports = {
   output: {
     path: resolve(__dirname, 'dist'),
     filename: '[name].js'
-
   },
 
-  context: resolve(__dirname, 'src'),
+  context,
 
   module: {
     rules: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        include: context,
+      },
+
       {
         test: /\.css$/,
         use: [
@@ -62,6 +69,10 @@ module.exports = {
       },
 
     ]
+  },
+
+  resolve: {
+    extensions: ['.js', '.json', '.jsx']
   },
 
   plugins: [
