@@ -15,6 +15,8 @@ module.exports = {
     context: resolve(__dirname, 'src'),
 
     plugins: [
-        new HtmlPlugin(),
+        new HtmlPlugin({
+            title: 'Amdocs Webpack Workshop'
+        }),
     ]
 };
