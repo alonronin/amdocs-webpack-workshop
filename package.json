@@ -36,6 +36,7 @@
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
+    "amdocs-components": "alonronin/amdocs-components",
     "bootstrap": "^4.0.0-beta",
     "mobx": "^3.3.0",
     "mobx-react": "^4.3.2",

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 
-import Table from './table';
+import Table from 'amdocs-components';
 import Filter from './Filter';
 import filterStore from './filter/store';
 
-import Store from './table/store';
+import Store from 'amdocs-components/dist/store';
 import { get1, get2, getGenders } from './Service';
 
 const table1 = new Store();
@@ -31,16 +31,14 @@ import Details from './details';
 class App extends Component {
   render() {
     return <div>
+      {/*<Details />*/}
+      <h1>Table</h1>
 
-      <Details />
+      <Filter onChange={filter => table1.setState({ filter })} />
+      <Table store={table1} />
 
-      {/*<h1>Table</h1>*/}
-
-      {/*<Filter onChange={filter => table1.setState({ filter })} />*/}
-      {/*<Table store={table1} />*/}
-
-      {/*<Filter onChange={filter => table2.setState({ filter })} />*/}
-      {/*<Table store={table2} />*/}
+      <Filter onChange={filter => table2.setState({ filter })} />
+      <Table store={table2} />
     </div>;
   }
 }
