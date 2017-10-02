@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Edgard",
+    "last_name": "Daleman",
+    "email": "edaleman0@behance.net",
+    "gender": "Male",
+    "ip_address": "72.107.201.51"
+  },
+  {
+    "id": 2,
+    "first_name": "Micaela",
+    "last_name": "Stanbro",
+    "email": "mstanbro1@vimeo.com",
+    "gender": "Female",
+    "ip_address": "55.114.138.29"
+  },
+  {
+    "id": 3,
+    "first_name": "Reidar",
+    "last_name": "Soares",
+    "email": "rsoares2@github.com",
+    "gender": "Male",
+    "ip_address": "194.73.24.11"
+  },
+  {
+    "id": 4,
+    "first_name": "Clevey",
+    "last_name": "Hatwell",
+    "email": "chatwell3@dyndns.org",
+    "gender": "Male",
+    "ip_address": "75.98.63.150"
+  },
+  {
+    "id": 5,
+    "first_name": "Nonna",
+    "last_name": "Bucknell",
+    "email": "nbucknell4@gizmodo.com",
+    "gender": "Female",
+    "ip_address": "216.9.168.211"
+  },
+  {
+    "id": 6,
+    "first_name": "Ernst",
+    "last_name": "Walsh",
+    "email": "ewalsh5@addthis.com",
+    "gender": "Male",
+    "ip_address": "89.88.166.54"
+  },
+  {
+    "id": 7,
+    "first_name": "Fallon",
+    "last_name": "Currie",
+    "email": "fcurrie6@goo.ne.jp",
+    "gender": "Female",
+    "ip_address": "96.200.85.14"
+  },
+  {
+    "id": 8,
+    "first_name": "Jaine",
+    "last_name": "Loding",
+    "email": "jloding7@twitpic.com",
+    "gender": "Female",
+    "ip_address": "25.123.14.49"
+  },
+  {
+    "id": 9,
+    "first_name": "Evangelia",
+    "last_name": "Lawrance",
+    "email": "elawrance8@ycombinator.com",
+    "gender": "Female",
+    "ip_address": "32.157.213.127"
+  },
+  {
+    "id": 10,
+    "first_name": "Franchot",
+    "last_name": "Cracknall",
+    "email": "fcracknall9@privacy.gov.au",
+    "gender": "Male",
+    "ip_address": "204.89.197.6"
+  }
+]
